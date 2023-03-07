@@ -67,7 +67,9 @@ public class CreateATable {
      */
     public void problem1(){
 //        write your SQL logic in a single line in the problem1.sql file.
-        String sql = FileUtil.parseSQLFile("problem1.sql");
+     String sql = "create table song (title varchar(100), artist varchar(100));";
+       // String sql = FileUtil.parseSQLFile("CREATE TABLE Person");
+      
 
         try {
             Connection connection = ConnectionUtil.getConnection();
